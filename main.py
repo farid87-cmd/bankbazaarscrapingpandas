@@ -21,4 +21,4 @@ for item in items:
     print('User Name     : ', author_name)
     print('Bank   : ', bank_name, '\n')
     datas.append([desc, author_name, bank_name])
-    #create dataframe
+
