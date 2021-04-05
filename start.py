@@ -23,4 +23,3 @@ for item in items:
     datas.append([desc, author_name, bank_name])
     #create dataframe
     df = pd.DataFrame(datas)
-    print(df)
