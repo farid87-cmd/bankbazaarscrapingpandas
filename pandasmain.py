@@ -24,10 +24,10 @@ for item in items:
     print('Bank   : ', bank_name, '\n')
 
     datas.append([desc, author_name, bank_name])
-    # create dataframe
-    with open('bankbazaar.csv', 'w', newline='') as file:
-        writer = csv.writer(file)
-        headers = ['Description', 'Authorname', 'Bank']
-        writer.writerow(headers)
-        for data in datas:
-            writer.writerow(data)
+    # create csv with pandas
+    column = ['desc', 'author', 'bank']
+    print()
+    df = pd.DataFrame(datas, columns=column)
+
+    # create csv
+    df.to_csv('hasil.csv')
